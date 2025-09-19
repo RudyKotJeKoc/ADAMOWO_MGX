@@ -1,10 +1,15 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://yourdomain.com/sitemap.xml
-
 # Disallow sensitive directories
 Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /logs/
+Disallow: /audio/
+Disallow: /music/
+
+# Allow public resources
+Allow: /public/
+
+# Note: Add your domain when deploying
+# Sitemap: https://your-domain.com/sitemap.xml

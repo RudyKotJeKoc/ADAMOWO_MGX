@@ -1,13 +1,18 @@
-# Radio Adamowo
+# 📻 Radio Adamowo
 
-Aplikacja webowa "Radio Adamowo" - edukacyjna platforma o manipulacji psychologicznej i toksycznych relacjach.
+**Słuchaj szumu prawdy w eterze manipulacji.**
 
-## 🎵 Funkcje
+Radio Adamowo to edukacyjna aplikacja webowa (PWA) poświęcona analizie toksycznych relacji i manipulacji psychologicznej. Projekt zawiera interaktywne audycje, materiały edukacyjne oraz narzędzia do rozpoznawania wzorców przemocy psychologicznej.
 
-- **Odtwarzacz muzyki** z 546 utworami w 5 kategoriach
-- **Podcasty edukacyjne** - 16 audycji analitycznych
-- **Interaktywne sekcje** - AI chat, kalendarz notatek
-- **PWA** - instalowalna jako aplikacja mobilna
+## ✨ Funkcje
+
+- 🎵 **Webowe radio** z różnymi playlistami muzycznymi (546 utworów w 5 kategoriach)
+- 🎙️ **Audycje analityczne** o manipulacji psychologicznej (16 podcastów edukacyjnych)
+- 📱 **Progressive Web App** - możliwość instalacji na telefonie
+- 🎬 **Materiały wideo** dokumentalne
+- 🖼️ **Galeria studia** radiowego
+- 🎯 **Interaktywne narzędzia** edukacyjne (AI chat, kalendarz notatek)
+- 📚 **Poradniki** rozpoznawania toksycznych zachowań
 - **Responsywny design** na wszystkie urządzenia
 
 ## 📁 Struktura plików

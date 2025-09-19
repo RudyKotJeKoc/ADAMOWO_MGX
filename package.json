@@ -1,15 +1,16 @@
 {
-  "name": "html-template",
+  "name": "radio-adamowo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Radio Adamowo - słuchaj szumu prawdy w eterze manipulacji. Edukacyjna aplikacja webowa o toksycznych relacjach i manipulacji psychologicznej.",
+  "main": "index.html",
   "scripts": {
     "dev": "vite --mode dev",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "echo 'linted'"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["radio", "pwa", "education", "psychology", "web-app"],
+  "author": "Radio Adamowo Team",
   "license": "ISC",
   "packageManager": "pnpm@10.10.0",
   "devDependencies": {
