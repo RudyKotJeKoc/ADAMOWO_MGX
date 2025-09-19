@@ -10,14 +10,23 @@
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
     <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <!-- Enhanced PWA Meta Tags -->
+    <!-- Standard theme-color for Chrome, Edge, Safari -->
     <meta name="theme-color" content="#f59e0b">
+    <!-- Enhanced Apple status bar styling -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Apple meta for web app capability -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Radio Adamowo">
+    <!-- Microsoft tile color for Windows -->
+    <meta name="msapplication-TileColor" content="#f59e0b">
     <link rel="preload" href="public/images/studio/studio-1.png" as="image">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 </head>
 <body class="bg-gray-900 text-gray-300">
     <!-- Baner instalacji PWA z animacją -->
     <div id="pwa-install-banner" class="fixed top-0 left-0 w-full flex justify-center z-50 hidden">
-        <div class="pwa-banner-content relative flex items-center px-6 py-4 mt-4 rounded-lg shadow-lg" style="background:rgba(0,32,0,0.92);">
+        <div class="pwa-banner-content relative flex items-center px-6 py-4 mt-4 rounded-lg shadow-lg">
             <div class="wave-light absolute inset-0 pointer-events-none"></div>
             <span class="relative z-10 text-green-300 font-bold text-lg mr-6">Zainstaluj Radio Adamowo na swoim telefonie!</span>
             <button id="pwa-install-btn" class="relative z-10 px-5 py-2 bg-green-500 text-black font-bold rounded-lg shadow hover:bg-green-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition">Zainstaluj</button>
@@ -39,28 +48,7 @@
     </header>
 
     <main class="container mx-auto px-4">
-        <!-- Enhanced Calendar Section -->
-        <section class="my-12">
-            <h2 class="text-3xl special-elite text-center mb-6 text-amber-500">Notatki z dnia:</h2>
-            <div id="infinity-timeline-container" role="region" aria-label="Kalendarz interaktywny" class="relative">
-                <svg id="infinity-path" aria-hidden="true"></svg>
-                <!-- Kalendarz generowany dynamicznie w JS -->
-            </div>
-            <div id="note-modal" class="hidden modal-backdrop fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-                <div class="modal-content bg-gray-800 p-6 rounded-lg max-w-md w-full border border-amber-500">
-                    <form id="note-form" class="space-y-4">
-                        <input type="date" id="note-date" readonly class="w-full p-2 bg-gray-700 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-amber-500" aria-label="Data notatki">
-                        <input type="text" id="note-name" placeholder="Twoje imię" class="w-full p-2 bg-gray-700 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-amber-500" aria-label="Imię">
-                        <textarea id="note-text" placeholder="Twoja notatka" class="w-full p-2 bg-gray-700 text-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-amber-500" rows="5" aria-label="Treść notatki"></textarea>
-                        <div class="flex justify-end space-x-4">
-                            <button type="button" id="modal-close-btn" class="px-4 py-2 bg-gray-600 text-gray-200 rounded hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-red-500" aria-label="Zamknij modal">Zamknij</button>
-                            <button type="submit" class="px-4 py-2 bg-amber-500 text-black rounded hover:bg-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500" aria-label="Zapisz notatkę">Zapisz Notatkę</button>
-                        </div>
-                        <p id="note-feedback" class="min-h-[1.25rem] text-sm"></p>
-                    </form>
-                </div>
-            </div>
-        </section>
+    
 
         <!-- Autoplay Overlay -->
         <div id="autoplay-overlay" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
@@ -245,7 +233,7 @@
         <!-- Enhanced Guide: 8 Sins -->
         <section id="guide" class="my-12">
             <h2 class="text-3xl special-elite text-center text-amber-500 mb-6">Poradnik: 8 Grzechów Toksycznych Osób</h2>
-            <p class="text-gray-300 text-center max-w-2xl mx-auto mb-6">Poniżej przedstawiamy najczęstsze „grzechy" toksycznych osób, które możesz spotkać w rodzinie, pracy czy w kontaktach z instytucjami.</p>
+            <p class="text-gray-300 text-center max-w-2xl mx-auto mb-6">Poniżej przedstawiamy najczęstsze grzechy toksycznych osób, które możesz spotkać w rodzinie, pracy czy w kontaktach z instytucjami.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-300">
                     <h3 class="text-xl special-elite text-amber-500 mb-2">Grzech 1: Branie pieniędzy z instytucji zamiast prawdziwej pomocy</h3>
@@ -260,7 +248,7 @@
                 <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-300">
                     <h3 class="text-xl special-elite text-amber-500 mb-2">Grzech 2: Przerzucanie winy i granie ofiary</h3>
                     <p class="text-gray-300">Opis: Manipulant nigdy nie przyzna się do błędu, obwinia innych, grając rolę pokrzywdzonego.</p>
-                    <p class="text-gray-300">Przykład z życia: Matka opisuje syna jako „niewdzięcznego", choć to ona zaniedbywała rodzinę.</p>
+                    <p class="text-gray-300">Przykład z życia: Matka opisuje syna jako niewdzięcznego, choć to ona zaniedbywała rodzinę.</p>
                     <p class="text-gray-300">Jak wykryć:</p>
                     <ul class="list-disc list-inside text-gray-300">
                         <li>Czy ktoś zawsze unika odpowiedzialności?</li>
@@ -269,8 +257,8 @@
                 </div>
                 <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-300">
                     <h3 class="text-xl special-elite text-amber-500 mb-2">Grzech 3: Gaslighting</h3>
-                    <p class="text-gray-300">Opis: Podważanie percepcji ofiary, wmawianie, że „przesadza" lub „wymyśla".</p>
-                    <p class="text-gray-300">Przykład z życia: Matka wpisała, że syn ma „schizofrenię" bez diagnozy, by go zdyskredytować.</p>
+                    <p class="text-gray-300">Opis: Podważanie percepcji ofiary, wmawianie, że przesadza lub wymyśla.</p>
+                    <p class="text-gray-300">Przykład z życia: Matka wpisała, że syn ma schizofrenię bez diagnozy, by go zdyskredytować.</p>
                     <p class="text-gray-300">Jak wykryć:</p>
                     <ul class="list-disc list-inside text-gray-300">
                         <li>Czy czujesz, że tracisz pewność siebie?</li>
@@ -279,18 +267,18 @@
                 </div>
                 <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-300">
                     <h3 class="text-xl special-elite text-amber-500 mb-2">Grzech 4: Inwigilacja i obsesyjna kontrola</h3>
-                    <p class="text-gray-300">Opis: Notowanie każdego ruchu ofiary, zbieranie „dowodów" do szantażu.</p>
-                    <p class="text-gray-300">Przykład z życia: Notowanie godzin gaszenia światła jako „dowód niewdzięczności".</p>
+                    <p class="text-gray-300">Opis: Notowanie każdego ruchu ofiary, zbieranie dowodów do szantażu.</p>
+                    <p class="text-gray-300">Przykład z życia: Notowanie godzin gaszenia światła jako dowód niewdzięczności.</p>
                     <p class="text-gray-300">Jak wykryć:</p>
                     <ul class="list-disc list-inside text-gray-300">
                         <li>Czy ktoś monitoruje Twoje działania?</li>
-                        <li>Czy zbiera „dowody" na Twoje zachowanie?</li>
+                        <li>Czy zbiera dowody na Twoje zachowanie?</li>
                     </ul>
                 </div>
                 <div class="bg-gray-800 p-6 rounded-lg hover:bg-gray-700 transition duration-300">
                     <h3 class="text-xl special-elite text-amber-500 mb-2">Grzech 5: Używanie instytucji jako broni</h3>
                     <p class="text-gray-300">Opis: Wciąganie policji, sądów, urzędów do rodzinnych konfliktów.</p>
-                    <p class="text-gray-300">Przykład z życia: Wzywanie dzielnicowego, by uzyskać „papier" na syna.</p>
+                    <p class="text-gray-300">Przykład z życia: Wzywanie dzielnicowego, by uzyskać papier na syna.</p>
                     <p class="text-gray-300">Jak wykryć:</p>
                     <ul class="list-disc list-inside text-gray-300">
                         <li>Czy ktoś grozi Ci instytucjami?</li>

@@ -1,19 +1,43 @@
 {
-  "name": "html-template",
+  "name": "radio-adamowo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Radio Adamowo - słuchaj szumu prawdy w eterze manipulacji. Edukacyjna aplikacja webowa o toksycznych relacjach i manipulacji psychologicznej.",
+  "main": "index.html",
+  "homepage": "https://radio-adamowo.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RudyKotJeKoc/ADAMOWO_MGX.git"
+  },
   "scripts": {
     "dev": "vite --mode dev",
     "build": "vite build",
-    "lint": "echo 'linted'"
+    "preview": "vite preview --port 4173",
+    "lint": "echo 'Project linted successfully'",
+    "serve": "vite preview"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "radio",
+    "pwa",
+    "education",
+    "psychology",
+    "web-app",
+    "adamowo",
+    "manipulation",
+    "awareness",
+    "streaming"
+  ],
+  "author": {
+    "name": "Radio Adamowo Team",
+    "url": "https://radio-adamowo.com"
+  },
   "license": "ISC",
   "packageManager": "pnpm@10.10.0",
   "devDependencies": {
     "vite": "^6.3.5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
   }
 }
 
