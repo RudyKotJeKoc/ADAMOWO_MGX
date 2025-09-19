@@ -12,4 +12,4 @@ Disallow: /music/
 Allow: /public/
 
 # Note: Add your domain when deploying
-# Sitemap: https://your-domain.com/sitemap.xml
+# Sitemap: https://adamowo.com/sitemap.xml
