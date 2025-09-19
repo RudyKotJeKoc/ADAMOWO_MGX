@@ -1,5 +1,5 @@
-// Stream URL configuration
-const STREAM_URL = 'https://example.com/radio-adamowo/stream.m3u8'; // Replace with actual stream URL
+// Stream URL configuration - Replace with actual stream URL when available
+const STREAM_URL = 'https://radio-adamowo.example.com/stream.m3u8';
 
 document.addEventListener('DOMContentLoaded', () => {
     const doc = document;

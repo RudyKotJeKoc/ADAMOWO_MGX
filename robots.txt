@@ -1,15 +1,26 @@
 User-agent: *
 Allow: /
 
-# Disallow sensitive directories
+# Allow important resources
+Allow: /public/
+Allow: /style.css
+Allow: /script.js
+Allow: /manifest.json
+
+# Disallow sensitive/unnecessary directories  
 Disallow: /node_modules/
 Disallow: /.git/
 Disallow: /logs/
+Disallow: /dist/
+Disallow: /.vite/
+Disallow: /tmp/
+
+# Audio and music files are protected (require interaction)
 Disallow: /audio/
 Disallow: /music/
 
-# Allow public resources
-Allow: /public/
+# Allow search engines to index images
+Allow: /public/images/
 
 # Note: Add your domain when deploying
-# Sitemap: https://adamowo.com/sitemap.xml
+# Sitemap: https://your-domain.com/sitemap.xml
